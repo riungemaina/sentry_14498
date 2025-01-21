@@ -6,6 +6,8 @@ module.exports = nextConfig
 
 // Injected content via Sentry wizard below
 
+// Injected content via Sentry wizard below
+
 const { withSentryConfig } = require("@sentry/nextjs")
 
 module.exports = withSentryConfig(module.exports, {
@@ -13,7 +15,7 @@ module.exports = withSentryConfig(module.exports, {
   // https://github.com/getsentry/sentry-webpack-plugin#options
 
   org: "viewcy-4s",
-  project: "javascript-nextjs",
+  project: "test",
 
   // Only print logs for uploading source maps in CI
   silent: !process.env.CI,

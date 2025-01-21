@@ -2,10 +2,10 @@
 // The config you add here will be used whenever a users loads a page in their browser.
 // https://docs.sentry.io/platforms/javascript/guides/nextjs/
 
-import * as Sentry from '@sentry/nextjs'
+import * as Sentry from "@sentry/nextjs";
 
 Sentry.init({
-  dsn: 'https://c3972d3d026b5059f2b95110e6101290@o4508449509867520.ingest.us.sentry.io/4508449511178240',
+  dsn: "https://449c711fab5658f075ff6ac294c88ad3@o4508449509867520.ingest.us.sentry.io/4508682154082304",
 
   // Add optional integrations for additional features
   integrations: [Sentry.replayIntegration()],
@@ -23,7 +23,4 @@ Sentry.init({
 
   // Setting this option to true will print useful information to the console while you're setting up Sentry.
   debug: false,
-
-  //* Disable Sentry in development
-  enabled: process.env.NEXT_PUBLIC_ENV === 'production' || process.env.NEXT_PUBLIC_ENV === 'staging',
-})
+});
