@@ -1,64 +1,6 @@
 /** @type {import('next').NextConfig} */
 
 const nextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'viewcy-fe.vercel.app',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'viewcy-heroku-staging.s3.amazonaws.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'viewcy-heroku-production.s3.amazonaws.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.v-u.us',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.viewcy.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'http',
-        hostname: 'www.lvh.me',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'www.gravatar.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'https',
-        hostname: 'image.mux.com',
-        port: '',
-        pathname: '/**',
-      },
-      {
-        protocol: 'http',
-        hostname: 'localhost',
-        port: '',
-        pathname: '/**',
-      },
-    ],
-  },
   async headers() {
     return [
       {
@@ -144,7 +86,6 @@ const nextConfig = {
   experimental: {
     proxyTimeout: 1000 * 60,
   },
-  reactStrictMode: process.env.NEXT_PUBLIC_STRICT_MODE === 'true',
 }
 
 module.exports = nextConfig
