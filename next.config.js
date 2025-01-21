@@ -70,16 +70,6 @@ const nextConfig = {
           source: '/maps/:path*',
           destination: 'https://maps.googleapis.com/maps/api/:path*',
         },
-        {
-          source: '/backend/:path*',
-          destination: `${process.env.NEXT_PUBLIC_BACKEND_URL}/:path*`,
-        },
-      ],
-      fallback: [
-        {
-          source: '/:path*',
-          destination: `${process.env.NEXT_PUBLIC_BACKEND_URL}/:path*`,
-        },
       ],
     }
   },
